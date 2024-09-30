@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Eventos</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Contenido del Nav-->
+     <nav class="navb">
+      <!-- Menú de navegación -->
+      <ul class="navbar-nav">
+        <li><i class="fi fi-bs-book-open-reader"></i></li>
+        <li>Agenda virtual de Eventos</li>
+      </ul>
+    </nav> 
+   
+    <!--Contenido del formulario-->
+    <div class="container-form">
+        <h1>AGENDA TU EVENTO</h1>
+        <form action="" id="event-form">
+            <!--EVENTO PARA JS-->
+            <div class="form-group">
+                <label for="">Nombre del evento</label>
+                <input type="text" id="event-name" required />
+            </div>
+            <div class="form-group">
+                <label for="">Fecha del evento</label>
+                <input type="date" id="event-date" required />
+            </div>
+            <div class="form-group">
+            <label for="">Hora del Evento</label>
+            <input type="time" id="event-time" required />
+        </div>
+        <div class="container-button">
+             <button type="submit">Registrar Evento</button>
+        </div>
+      </form>
+    
+    </div>
+    
+    <!-- <div class="container-events"> -->
+        <div id="event-list">
+         <div class="empty-block">
+            <h2>Eventos Registrados</h2>
+            <input type="text" id="search" placeholder="Buscar eventos...">
+               <ul id="events">
+          
+               </ul>
+          </div>
+      </div>
+    
+    </div>
+  </div>
+   
+  </body>
+  <!-- Contenido del footer-->
+  <footer class="container-footer">
+    <p>&copy; 2024 </p>
+  </footer>
+
+   <script src="JS/script.js"></script>
+</html>
